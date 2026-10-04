@@ -621,6 +621,45 @@
     </div>
   </footer>
 
+  <!-- ============ BUTTON CUSTOMIZER ============ -->
+  <div class="customizer" id="customizer">
+    <div class="customizer-panel" id="czPanel" role="dialog" aria-label="Button style customizer" aria-hidden="true">
+      <div class="customizer-head">
+        <h3>Button style</h3>
+        <button class="customizer-close" id="czClose" aria-label="Close customizer">&times;</button>
+      </div>
+
+      <div class="cz-group">
+        <span class="cz-label" id="czStyleLabel">Appearance</span>
+        <div class="cz-seg" role="group" aria-labelledby="czStyleLabel">
+          <button type="button" data-style="glass" aria-pressed="true">Glass</button>
+          <button type="button" data-style="solid" aria-pressed="false">Solid</button>
+          <button type="button" data-style="outline" aria-pressed="false">Outline</button>
+        </div>
+      </div>
+
+      <div class="cz-group" id="czBlurGroup">
+        <label class="cz-label" for="czBlur">Glass strength</label>
+        <div class="cz-slider-row">
+          <input type="range" id="czBlur" min="0" max="20" step="1" value="7" aria-describedby="czBlurVal" />
+          <span class="cz-blur-val" id="czBlurVal">7px</span>
+        </div>
+      </div>
+
+      <button type="button" class="cz-reset" id="czReset">Reset to default</button>
+    </div>
+
+    <button class="customizer-toggle" id="czToggle" aria-expanded="false" aria-controls="czPanel">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line>
+        <line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line>
+        <line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>
+      </svg>
+      <span>Customize</span>
+    </button>
+  </div>
+
   <script src="script.js" defer></script>
 </body>
 </html>
