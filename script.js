@@ -85,17 +85,35 @@
     });
   }
 
-  if ("IntersectionObserver" in window && sections.length) {
-    var secObserver = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) setActive(entry.target.id);
-        });
-      },
-      { threshold: 0.2, rootMargin: "-40% 0px -55% 0px" }
-    );
-    sections.forEach(function (s) { secObserver.observe(s); });
+  function updateActive() {
+    if (!sections.length) return;
+    var headerH = header ? header.offsetHeight : 68;
+    var line = window.scrollY + headerH + 24; // just below the sticky nav
+    var currentId = null;
+
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].offsetTop <= line) currentId = sections[i].id;
+    }
+
+    // At the very bottom, force the last section active
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      currentId = sections[sections.length - 1].id;
+    }
+
+    if (currentId) setActive(currentId);
   }
+
+  // rAF-throttled scroll handler
+  var ticking = false;
+  window.addEventListener("scroll", function () {
+    if (!ticking) {
+      window.requestAnimationFrame(function () { updateActive(); ticking = false; });
+      ticking = true;
+    }
+  }, { passive: true });
+  window.addEventListener("resize", updateActive, { passive: true });
+  window.addEventListener("load", updateActive);
+  updateActive();
 
   /* ------------------------------------------------------------
      Button customizer (viewer-adjustable button style)

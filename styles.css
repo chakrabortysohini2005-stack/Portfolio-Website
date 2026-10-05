@@ -74,6 +74,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .container { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
 
 .section { padding: clamp(60px, 9vw, 120px) 0; position: relative; }
+main section[id] { scroll-margin-top: 84px; }
 .section-alt { background: var(--bg-elev); border-block: 1px solid var(--line); }
 
 /* ---------- Skip link ---------- */
@@ -171,7 +172,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--muted); transition: color .2s var(--ease), background .2s var(--ease); font-weight: 500;
 }
 .nav a:hover { color: var(--ink); background: rgba(255,255,255,0.05); }
-.nav a.active { color: var(--accent); }
+.nav a.active { color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px rgba(45, 212, 191, 0.28); }
 
 .nav-cta { padding: 8px 15px; font-size: 0.85rem; }
 
