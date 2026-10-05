@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -129,10 +129,10 @@
             with a strong foundation in physical and human geography.
           </p>
           <p>
-            Skilled in GIS, remote sensing, spatial modelling, cartography, and geospatial data analysis and
-            machine learning. I'm interested in applying geospatial and statistical techniques to sustainable
-            development, environmental management, urban planning, and disaster risk reduction — motivated by
-            research and innovation to solve complex urban and environmental problems.
+            M.Sc. Geoinformatics student with a strong foundation in programming, geospatial technologies,
+            machine learning and data analysis. Seeking a challenging role to apply analytical and
+            problem-solving skills to innovative, data-driven geospatial and AI/ML solutions while growing as a
+            technology professional.
           </p>
         </div>
       </div>
@@ -271,143 +271,119 @@
         <div class="section-head">
           <span class="section-index">04</span>
           <h2 class="section-title">Projects</h2>
-          <p class="section-desc">Research and applied work across hydrology, hazard modelling and urban climate — problem, method, and measurable result.</p>
+          <p class="section-desc">Research and applied work across cryo-hydrology, urban climate and smart-city GIS — each built on real data pipelines, spatial modelling and machine learning.</p>
+          <p class="ml-legend"><span class="sw" aria-hidden="true"></span> <span>Highlighted text marks <strong>machine-learning &amp; predictive-modelling</strong> components.</span></p>
         </div>
 
-        <!-- Featured project -->
+        <!-- Featured project (Project 1) -->
         <article class="card project-featured reveal">
           <div class="project-featured-body">
             <div class="project-tagrow">
               <span class="tag tag-accent">Featured · M.Sc. Thesis</span>
-              <span class="tag">2000 – 2024</span>
+              <span class="tag tag-ml">✦ Predictive Modelling</span>
+              <span class="tag">2000 – 2030</span>
               <span class="tag">Solo</span>
             </div>
-            <h3 class="project-title">Cryo-Hydrological Water Security Index &amp; Vertical Displacement of Water — Upper Ganga Basin, Central Himalaya</h3>
+            <h3 class="project-title">Cryo-Hydrological Water Security &amp; Vertical Displacement of Water Generation — Upper Ganga Basin</h3>
             <p class="project-desc">
-              A distributed, SPHY-inspired machine-learning water-balance framework to assess cryosphere change
-              and water security across the Central Himalaya, and a new concept to expose the elevation mismatch
-              between where water is generated and where it is consumed.
+              A distributed cryosphere–hydrology framework quantifying glacier retreat, snow dynamics and water
+              security across the Upper Ganga Basin — exposing the vertical mismatch between where water is
+              generated and where it is consumed.
             </p>
             <ul class="project-points">
-              <li>Assessed cryosphere change &amp; water security across an <strong>18,764 km²</strong> basin using remote sensing and GIS.</li>
-              <li>Developed the <strong>CHWSI</strong> and a distributed ML + SPHY-based water-balance model to quantify water availability, demand and stress.</li>
-              <li>Identified <strong>34.6% glacier loss</strong> and an <strong>878 m elevation gap</strong> between water generation and consumption.</li>
-              <li>Proposed the <strong>Vertical Displacement of Water</strong> concept to highlight the generation–consumption elevation mismatch.</li>
+              <li>Processed multi-temporal <strong>Landsat Surface Reflectance</strong> in Google Earth Engine with <strong>NDSI-based glacier mapping</strong> to track glacier extent across 2000, 2014 &amp; 2024.</li>
+              <li>Derived seasonal <strong>Snow Cover Frequency</strong> from MODIS MOD10A1 via NDSI thresholding &amp; pixel-level QA screening.</li>
+              <li>Fused glacier extent &amp; snow cover through normalization and weighted overlay into a <strong>Cryosphere Health Score (CHS)</strong>.</li>
+              <li><span class="ml-hl">Built a distributed SPHY-based hydrological water-balance model over 6,393 grid cells</span> — precipitation, temperature lapse rate, snow/ice melt, soil moisture &amp; evapotranspiration — to estimate spatial water availability.</li>
+              <li>Integrated water demand &amp; stress ratios with cryosphere indicators into the <strong>Cryo-Hydrological Water Security Index (CHWSI)</strong>, then analysed vertical generation–demand separation while <span class="ml-hl">projecting basin conditions to 2030</span>.</li>
             </ul>
             <div class="project-footer">
               <div class="stack-list">
-                <span>ArcGIS Pro</span><span>Google Earth Engine</span><span>Distributed ML</span><span>Remote Sensing</span>
+                <span>Google Earth Engine</span><span>Distributed SPHY</span><span>Python</span><span>ArcGIS Pro</span>
               </div>
               <span class="status-badge">📄 Manuscript under peer review</span>
             </div>
           </div>
         </article>
 
-        <!-- Project grid -->
+        <!-- Project grid (Projects 2–5) -->
         <div class="cards-grid cards-2 projects-grid">
 
-          <article class="card project-card reveal">
-            <div class="project-tagrow">
-              <span class="tag">Random Forest</span>
-              <span class="tag">Kargil, Ladakh</span>
-            </div>
-            <h3 class="project-title">GLOF Hazard Risk Assessment with Cryospheric &amp; Topographic Indicators</h3>
-            <p class="project-desc">Machine-learning susceptibility zonation for Glacial Lake Outburst Floods across Kargil, Ladakh (2000–2024).</p>
-            <ul class="project-points">
-              <li>Extracted glacial-lake &amp; glacier inventories via NDWI/NDSI spectral thresholding from multi-temporal imagery.</li>
-              <li>Engineered a cryosphere–topography feature space (lake area, glacier extent, ice thickness, DEM slope, elevation, drainage density, flow accumulation).</li>
-              <li>Implemented a <strong>Random Forest</strong> ensemble for GLOF susceptibility zonation.</li>
-            </ul>
-            <div class="stack-list">
-              <span>Python</span><span>Scikit-learn</span><span>GEE</span><span>ArcGIS</span>
-            </div>
-          </article>
-
-          <article class="card project-card reveal">
-            <div class="project-tagrow">
-              <span class="tag">Urban Climate</span>
-              <span class="tag">Delhi</span>
-            </div>
-            <h3 class="project-title">Spatio-Temporal Dynamics of the Urban Heat Island — Delhi</h3>
-            <p class="project-desc">Multi-temporal UHI analysis linking land-cover change to surface temperature across two decades.</p>
-            <ul class="project-points">
-              <li>Processed Landsat 5/7/8 thermal imagery in GEE — radiometric calibration, cloud masking, co-registration &amp; LST retrieval.</li>
-              <li>Derived NDVI, NDBI, built-up fraction &amp; NDVI-based emissivity; found a <strong>5.21% built-up rise</strong>, <strong>13.82% vegetation decline</strong> and <strong>1.73 °C LST increase</strong>.</li>
-              <li>Ran multi-temporal UHI intensity, spatial-pattern &amp; change-detection analysis with Pearson correlation.</li>
-            </ul>
-            <div class="project-footer">
-              <div class="stack-list">
-                <span>GEE</span><span>Python</span><span>ArcGIS Pro</span>
-              </div>
-              <span class="status-badge">📄 Under peer review</span>
-            </div>
-          </article>
-
-          <article class="card project-card reveal">
-            <div class="project-tagrow">
-              <span class="tag">Thermal RS</span>
-              <span class="tag">Hooghly</span>
-            </div>
-            <h3 class="project-title">Apparent Thermal Inertia (ATI) Estimation — Hooghly District</h3>
-            <p class="project-desc">Thermal remote sensing to map soil-moisture variability over a six-year baseline (2017–2023).</p>
-            <ul class="project-points">
-              <li>Processed multispectral &amp; thermal imagery to extract surface albedo and diurnal LST variations.</li>
-              <li>Computed <strong>Apparent Thermal Inertia</strong> to map spatial variations in soil moisture.</li>
-              <li>Identified localised anomalies in surface energy fluxes and land-cover thermal responses.</li>
-            </ul>
-            <div class="stack-list">
-              <span>Thermal RS</span><span>GEE</span><span>Python</span>
-            </div>
-          </article>
-
-          <article class="card project-card reveal">
-            <div class="project-tagrow">
-              <span class="tag">AHP · Risk</span>
-              <span class="tag">Guwahati, Assam</span>
-            </div>
-            <h3 class="project-title">Multi-Hazard Susceptibility &amp; Compound Disaster Risk — Guwahati</h3>
-            <p class="project-desc">Weighted multi-criteria risk modelling combining physical hazard with exposure for urban planning.</p>
-            <ul class="project-points">
-              <li>Engineered a compound disaster-risk model integrating topographic, hydrological &amp; climatic variables using <strong>AHP</strong>.</li>
-              <li>Synthesised weighted hazard indices with population &amp; infrastructure exposure data.</li>
-              <li>Produced comprehensive vulnerability zones for urban-planning authorities.</li>
-            </ul>
-            <div class="stack-list">
-              <span>AHP</span><span>ArcGIS</span><span>Multi-criteria GIS</span>
-            </div>
-          </article>
-
-          <article class="card project-card reveal">
-            <div class="project-tagrow">
-              <span class="tag">SAR · Flood</span>
-              <span class="tag">Kerala</span>
-            </div>
-            <h3 class="project-title">Rapid Flood Response — Kerala Flood 2018</h3>
-            <p class="project-desc">Pre/post-disaster satellite analysis to map inundation and optimise relief routing.</p>
-            <ul class="project-points">
-              <li>Conducted rapid-response spatial analysis using pre- and post-disaster imagery including <strong>SAR</strong> datasets to demarcate flood extents.</li>
-              <li>Executed spatial overlays with LULC &amp; infrastructure layers to quantify structural damage.</li>
-              <li>Generated thematic maps to optimise evacuation and relief routing.</li>
-            </ul>
-            <div class="stack-list">
-              <span>SAR</span><span>ArcGIS</span><span>LULC Overlay</span>
-            </div>
-          </article>
-
+          <!-- Project 2 -->
           <article class="card project-card reveal">
             <div class="project-tagrow">
               <span class="tag">Web &amp; Mobile</span>
-              <span class="tag">App</span>
+              <span class="tag">CLIMO</span>
             </div>
             <h3 class="project-title">CLIMO — Weather Web &amp; Mobile Application</h3>
             <p class="project-desc">A location-aware weather app with nearest-station detection and routing.</p>
             <ul class="project-points">
-              <li>Built a weather web &amp; mobile app with an interactive, user-friendly interface.</li>
-              <li>Implemented geolocation &amp; nearest-station detection using the <strong>Haversine</strong> distance algorithm.</li>
-              <li>Integrated GIS and routing to visualise location info and provide route distance/time.</li>
+              <li>Built a weather web &amp; mobile app integrating location-based weather in an interactive, user-friendly interface.</li>
+              <li>Implemented geolocation &amp; nearest-weather-station detection using lat/long coordinates and the <strong>Haversine distance algorithm</strong>.</li>
+              <li>Integrated GIS &amp; routing to visualise location info and provide route distance/time for practical, location-aware weather analysis.</li>
             </ul>
             <div class="stack-list">
               <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Android Studio</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card reveal">
+            <div class="project-tagrow">
+              <span class="tag">Web GIS</span>
+              <span class="tag">Spatial Analytics</span>
+              <span class="tag">Pune District</span>
+            </div>
+            <h3 class="project-title">GIS-Based Smart Parking &amp; Traffic Congestion Management — Pune District</h3>
+            <p class="project-desc">A public web-GIS app for live parking availability, nearby-facility discovery and turn-by-turn routing.</p>
+            <ul class="project-points">
+              <li>Built a public <strong>ArcGIS Experience Builder</strong> app: click any location for live parking status (Available / Limited / Full), facilities within 1 km ranked by proximity, and turn-by-turn directions.</li>
+              <li>Deployed the web GIS on ArcGIS Online — <strong>16+ hosted feature layers</strong> spanning 100+ parking facilities, 25 congestion zones &amp; 149+ POIs, with custom symbology &amp; interactive pop-ups.</li>
+              <li>Ran multi-ring buffer (500–2000 m), <strong>hexagonal hot-spot analysis</strong> and an <strong>Arcade demand–supply suitability model</strong> to flag talukas with the highest unmet demand, with live Survey123 citizen reporting.</li>
+            </ul>
+            <div class="stack-list">
+              <span>ArcGIS Experience Builder</span><span>ArcGIS Online</span><span>Arcade</span><span>Survey123</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card project-card reveal">
+            <div class="project-tagrow">
+              <span class="tag tag-ml">✦ ML Classification</span>
+              <span class="tag">Urban Climate</span>
+              <span class="tag">Delhi · Team</span>
+            </div>
+            <h3 class="project-title">Spatio-Temporal Dynamics of the Urban Heat Island — Delhi (2016–2024)</h3>
+            <p class="project-desc">Multi-sensor analysis of Delhi's thermal–vegetation–water restructuring and thermal-risk zoning.</p>
+            <ul class="project-points">
+              <li>Characterised urban surface dynamics from multi-temporal <strong>Sentinel-2</strong> imagery, capturing vegetation, built-up &amp; surface-water change.</li>
+              <li>Quantified transformation via <strong>NDVI, NDBI &amp; NDWI</strong>, revealing Delhi's urban–vegetation–water restructuring.</li>
+              <li><span class="ml-hl">Mapped LULC transitions &amp; urban expansion through multi-temporal classification and change-detection</span> (2016 → 2024).</li>
+              <li>Investigated thermal behaviour via <strong>Land Surface Temperature</strong> &amp; <strong>Apparent Thermal Inertia</strong>, then integrated NDVI, NDBI &amp; LST into a spatial <strong>Urban Thermal Vulnerability Index (UTVI)</strong> to delineate thermal-risk zones.</li>
+            </ul>
+            <div class="stack-list">
+              <span>Google Earth Engine</span><span>Sentinel-2</span><span>ALOS PALSAR</span><span>Remote Sensing</span>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="card project-card reveal">
+            <div class="project-tagrow">
+              <span class="tag tag-ml">✦ ML &amp; Geostatistics</span>
+              <span class="tag">Chambal Basin</span>
+              <span class="tag">LJMU, UK · Ongoing</span>
+            </div>
+            <h3 class="project-title">Surface Water–Groundwater Interaction under Climatic &amp; Anthropogenic Forcing — Chambal River Basin</h3>
+            <p class="project-desc">A multi-source geospatial–geostatistical model of river–aquifer exchange and recharge prioritisation, in collaboration with Liverpool John Moores University, UK.</p>
+            <ul class="project-points">
+              <li>Fused a multi-resolution raster stack — SRTM 30 m DEM, Copernicus/ESRI Sentinel-2 land cover, ERA5, SoilGrids &amp; GLHYMPS — to a common 1 km grid (UTM 44N); derived drainage products in <strong>Arc Hydro</strong>.</li>
+              <li>Ran <strong>post-classification change detection</strong> on a 25-year land-cover series, quantifying <strong>353.7% built-up expansion</strong> via transition matrices.</li>
+              <li>Modelled river–aquifer exchange via raster algebra — water-balance recharge, Baseflow Index &amp; <strong>Darcy flux (q = −T∇h)</strong> over potentiometric surfaces from <span class="ml-hl">Empirical Bayesian Kriging</span> of CGWB wells.</li>
+              <li><span class="ml-hl">Mapped per-pixel trends &amp; anomalies with Mann–Kendall &amp; Sen's slope</span> across 25 annual layers, separating climatic from anthropogenic forcing (mean BFI 0.30 → 0.60).</li>
+              <li>Built an <span class="ml-hl">AHP-MCDA weighted-overlay suitability model</span> (11 layers, CR &lt; 0.10) to prioritise groundwater-recharge zones.</li>
+            </ul>
+            <div class="stack-list">
+              <span>Arc Hydro</span><span>ERA5</span><span>EBK Geostatistics</span><span>Python</span>
             </div>
           </article>
 
@@ -660,6 +636,6 @@
     </button>
   </div>
 
-  <script src="script.js?v=3" defer></script>
+  <script src="script.js?v=4" defer></script>
 </body>
 </html>

@@ -21,6 +21,10 @@
   --accent-deep: #0f766e;
   --accent-soft: rgba(45, 212, 191, 0.12);
 
+  /* ML accent — reserved for machine-learning / predictive work (distinct from teal) */
+  --ml:      #a78bfa;
+  --ml-soft: rgba(167, 139, 250, 0.16);
+
   /* Lines */
   --line:       rgba(255, 255, 255, 0.08);
   --line-strong:rgba(255, 255, 255, 0.14);
@@ -339,6 +343,22 @@ main section[id] { scroll-margin-top: 84px; }
    ============================================================ */
 .tag { font-size: 0.72rem; font-weight: 600; padding: 4px 11px; border-radius: 999px; background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid var(--line); letter-spacing: 0.02em; }
 .tag-accent { background: var(--accent-soft); color: var(--accent); border-color: rgba(45,212,191,0.3); }
+.tag-ml {
+  background: var(--ml-soft); color: #d2c2ff; border-color: rgba(167, 139, 250, 0.5);
+  box-shadow: 0 0 18px -5px rgba(167, 139, 250, 0.75);
+}
+
+/* Inline machine-learning highlight (highlighter-pen effect) */
+.ml-hl {
+  color: #ece4ff; font-weight: 600;
+  background: linear-gradient(transparent 60%, rgba(167, 139, 250, 0.32) 0);
+  padding: 0 2px; border-radius: 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone;
+}
+
+/* ML legend under the Projects heading */
+.ml-legend { display: inline-flex; align-items: center; gap: 9px; margin-top: 16px; font-size: 0.85rem; color: var(--muted); }
+.ml-legend .sw { width: 28px; height: 14px; border-radius: 3px; background: linear-gradient(transparent 50%, rgba(167, 139, 250, 0.5) 0); border: 1px solid rgba(167, 139, 250, 0.45); flex: none; }
+.ml-legend strong { color: #c9b8ff; font-weight: 600; }
 .project-tagrow { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
 
 .project-featured {
