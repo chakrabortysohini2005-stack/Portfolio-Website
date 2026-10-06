@@ -328,6 +328,11 @@ main section[id] { scroll-margin-top: 84px; }
   background: rgba(255,255,255,0.04); border: 1px solid var(--line);
 }
 
+/* ML skill card — violet accent tying it to the projects' ML theme */
+.skill-ml { border-color: rgba(167, 139, 250, 0.4); box-shadow: 0 0 36px -18px rgba(167, 139, 250, 0.7); }
+.skill-ml:hover { border-color: rgba(167, 139, 250, 0.6); }
+.skill-ml .chip-list li { background: var(--ml-soft); border-color: rgba(167, 139, 250, 0.3); color: #e7ddff; }
+
 .focus-row { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 22px 24px; border: 1px dashed var(--line-strong); border-radius: var(--radius); background: var(--accent-soft); }
 .focus-label { font-family: var(--font-display); font-weight: 600; color: var(--ink); font-size: 0.95rem; }
 .focus-tags { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -408,6 +413,7 @@ main section[id] { scroll-margin-top: 84px; }
 /* ============================================================
    INTERNSHIP
    ============================================================ */
+.internship-list { display: flex; flex-direction: column; gap: 18px; max-width: 820px; }
 .internship-card { max-width: 820px; }
 .internship-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
 .internship-head h3 { font-size: 1.35rem; }
