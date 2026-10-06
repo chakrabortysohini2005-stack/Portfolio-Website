@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -279,28 +279,28 @@
           <div class="project-featured-body">
             <div class="project-tagrow">
               <span class="tag tag-accent">Featured · M.Sc. Thesis</span>
-              <span class="tag tag-ml">✦ Predictive Modelling</span>
-              <span class="tag">2000 – 2030</span>
+              <span class="tag tag-ml">✦ Deep Learning · ML</span>
               <span class="tag">Solo</span>
             </div>
-            <h3 class="project-title">Cryo-Hydrological Water Security &amp; Vertical Displacement of Water Generation — Upper Ganga Basin</h3>
+            <h3 class="project-title">Cryo-Hydrological Water Security Index &amp; Vertical Displacement of Water Generation — Upper Ganga Basin</h3>
             <p class="project-desc">
-              A distributed cryosphere–hydrology framework quantifying glacier retreat, snow dynamics and water
-              security across the Upper Ganga Basin — exposing the vertical mismatch between where water is
-              generated and where it is consumed.
+              A predictive water-security risk framework for the Upper Ganga Basin — a region serving
+              <strong>50M+ downstream residents</strong> — fusing multi-temporal satellite imagery with deep-learning
+              hydrological modelling to forecast glacier-driven water stress.
             </p>
             <ul class="project-points">
-              <li>Processed multi-temporal <strong>Landsat Surface Reflectance</strong> in Google Earth Engine with <strong>NDSI-based glacier mapping</strong> to track glacier extent across 2000, 2014 &amp; 2024.</li>
-              <li>Derived seasonal <strong>Snow Cover Frequency</strong> from MODIS MOD10A1 via NDSI thresholding &amp; pixel-level QA screening.</li>
-              <li>Fused glacier extent &amp; snow cover through normalization and weighted overlay into a <strong>Cryosphere Health Score (CHS)</strong>.</li>
-              <li><span class="ml-hl">Built a distributed SPHY-based hydrological water-balance model over 6,393 grid cells</span> — precipitation, temperature lapse rate, snow/ice melt, soil moisture &amp; evapotranspiration — to estimate spatial water availability.</li>
-              <li>Integrated water demand &amp; stress ratios with cryosphere indicators into the <strong>Cryo-Hydrological Water Security Index (CHWSI)</strong>, then analysed vertical generation–demand separation while <span class="ml-hl">projecting basin conditions to 2030</span>.</li>
+              <li>Fused multi-temporal satellite imagery with spatial analytics to quantify glacier retreat &amp; seasonal snow-cover variability through a custom <strong>Cryosphere Health Score (CHS)</strong>.</li>
+              <li><span class="ml-hl">Engineered a scalable, distributed hydrological-simulation machine-learning model across 6,393 grid cells</span>, integrating climate, terrain, soil &amp; evapotranspiration data into spatially explicit water-availability estimates for resource-planning stakeholders.</li>
+              <li><span class="ml-hl">Built an LSTM time-series forecasting pipeline projecting water-stress scenarios to 2030</span>, translating complex multi-source data into decision-support indicators &amp; risk dashboards for climate-resilient planning.</li>
             </ul>
             <div class="project-footer">
               <div class="stack-list">
-                <span>Google Earth Engine</span><span>Distributed SPHY</span><span>Python</span><span>ArcGIS Pro</span>
+                <span>Google Earth Engine</span><span>Python</span><span>LSTM / Deep Learning</span><span>SPHY</span><span>ArcGIS Pro</span>
               </div>
-              <span class="status-badge">📄 Manuscript under peer review</span>
+              <div class="project-meta">
+                <a class="project-link" href="https://chakrabortysohini2005-stack.github.io/Cryo-Hydrological-Water-Security-Index/" target="_blank" rel="noopener noreferrer">Live&nbsp;project <span class="arrow" aria-label="(opens in a new window)">↗</span></a>
+                <span class="status-badge">📄 Manuscript under peer review</span>
+              </div>
             </div>
           </div>
         </article>
@@ -311,18 +311,22 @@
           <!-- Project 2 -->
           <article class="card project-card reveal">
             <div class="project-tagrow">
-              <span class="tag">Web &amp; Mobile</span>
+              <span class="tag">Web Platform</span>
+              <span class="tag">Full-Stack GIS</span>
               <span class="tag">CLIMO</span>
             </div>
-            <h3 class="project-title">CLIMO — Weather Web &amp; Mobile Application</h3>
-            <p class="project-desc">A location-aware weather app with nearest-station detection and routing.</p>
+            <h3 class="project-title">All-India Weather Risk &amp; Emergency Access Platform (CLIMO)</h3>
+            <p class="project-desc">A pan-India, real-time weather-intelligence &amp; emergency-access platform with composite risk scoring and weather-aware routing.</p>
             <ul class="project-points">
-              <li>Built a weather web &amp; mobile app integrating location-based weather in an interactive, user-friendly interface.</li>
-              <li>Implemented geolocation &amp; nearest-weather-station detection using lat/long coordinates and the <strong>Haversine distance algorithm</strong>.</li>
-              <li>Integrated GIS &amp; routing to visualise location info and provide route distance/time for practical, location-aware weather analysis.</li>
+              <li>Architected a pan-India real-time weather platform across <strong>100+ monitoring stations</strong>, with a composite <strong>risk-scoring engine (0–100)</strong> synthesising temperature, rainfall, humidity &amp; wind into flood &amp; extreme-weather assessments.</li>
+              <li>Built a multi-layer analytics dashboard — live weather choropleths, <strong>2000–2030 climate-trend animation</strong>, proximity buffers &amp; weather-aware route planning (ORS) — for spatial risk assessment &amp; safe navigation corridors.</li>
+              <li>Delivered pan-Indian accessibility with <strong>12 regional languages</strong>, a real-time alert pipeline (browser + SMS-ready) and nearest emergency-infrastructure detection (hospitals, fire stations, schools).</li>
             </ul>
-            <div class="stack-list">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Android Studio</span>
+            <div class="project-bottom">
+              <div class="stack-list">
+                <span>Leaflet.js</span><span>JavaScript</span><span>Open-Meteo API</span><span>Nominatim</span><span>OpenRouteService</span>
+              </div>
+              <a class="project-link" href="https://chakrabortysohini2005-stack.github.io/Web-Mobile-Application-CLIMO/CLIMO-fixed/CLIMO-project/CLIMO.html" target="_blank" rel="noopener noreferrer">Live&nbsp;app <span class="arrow" aria-label="(opens in a new window)">↗</span></a>
             </div>
           </article>
 
@@ -331,17 +335,20 @@
             <div class="project-tagrow">
               <span class="tag">Web GIS</span>
               <span class="tag">Spatial Analytics</span>
-              <span class="tag">Pune District</span>
+              <span class="tag">Pune · Team</span>
             </div>
             <h3 class="project-title">GIS-Based Smart Parking &amp; Traffic Congestion Management — Pune District</h3>
-            <p class="project-desc">A public web-GIS app for live parking availability, nearby-facility discovery and turn-by-turn routing.</p>
+            <p class="project-desc">A citizen-facing urban-mobility platform for live parking availability, nearby-amenity discovery and turn-by-turn navigation.</p>
             <ul class="project-points">
-              <li>Built a public <strong>ArcGIS Experience Builder</strong> app: click any location for live parking status (Available / Limited / Full), facilities within 1 km ranked by proximity, and turn-by-turn directions.</li>
-              <li>Deployed the web GIS on ArcGIS Online — <strong>16+ hosted feature layers</strong> spanning 100+ parking facilities, 25 congestion zones &amp; 149+ POIs, with custom symbology &amp; interactive pop-ups.</li>
-              <li>Ran multi-ring buffer (500–2000 m), <strong>hexagonal hot-spot analysis</strong> and an <strong>Arcade demand–supply suitability model</strong> to flag talukas with the highest unmet demand, with live Survey123 citizen reporting.</li>
+              <li>Deployed a citizen-facing platform on <strong>ArcGIS Experience Builder</strong> — live parking status (Available / Limited / Full) across <strong>100+ facilities</strong>, 1 km proximity-ranked amenities &amp; turn-by-turn navigation — on <strong>16+ hosted feature layers</strong> (parking, 25 congestion zones, 149+ POIs).</li>
+              <li>Ran multi-ring buffer accessibility (500–2000 m) &amp; <strong>hexagonal hot-spot mapping</strong>, then an <strong>Arcade demand–supply suitability model</strong> scoring each taluka's unmet demand into a prioritised investment roadmap.</li>
+              <li>Integrated a live <strong>Survey123</strong> citizen-reporting pipeline — a continuous crowdsourced data-refresh loop sustaining accuracy without manual surveys; a scalable smart-city governance model.</li>
             </ul>
-            <div class="stack-list">
-              <span>ArcGIS Experience Builder</span><span>ArcGIS Online</span><span>Arcade</span><span>Survey123</span>
+            <div class="project-bottom">
+              <div class="stack-list">
+                <span>ArcGIS Experience Builder</span><span>ArcGIS Online</span><span>Survey123</span><span>Arcade</span>
+              </div>
+              <a class="project-link" href="https://experience.arcgis.com/experience/120bc5458d8045868d459b21ac30e0e8" target="_blank" rel="noopener noreferrer">Live&nbsp;app <span class="arrow" aria-label="(opens in a new window)">↗</span></a>
             </div>
           </article>
 
@@ -353,15 +360,16 @@
               <span class="tag">Delhi · Team</span>
             </div>
             <h3 class="project-title">Spatio-Temporal Dynamics of the Urban Heat Island — Delhi (2016–2024)</h3>
-            <p class="project-desc">Multi-sensor analysis of Delhi's thermal–vegetation–water restructuring and thermal-risk zoning.</p>
+            <p class="project-desc">Multi-sensor UHI analysis mapping Delhi's land-cover change to zone-level thermal-risk hotspots.</p>
             <ul class="project-points">
-              <li>Characterised urban surface dynamics from multi-temporal <strong>Sentinel-2</strong> imagery, capturing vegetation, built-up &amp; surface-water change.</li>
-              <li>Quantified transformation via <strong>NDVI, NDBI &amp; NDWI</strong>, revealing Delhi's urban–vegetation–water restructuring.</li>
-              <li><span class="ml-hl">Mapped LULC transitions &amp; urban expansion through multi-temporal classification and change-detection</span> (2016 → 2024).</li>
-              <li>Investigated thermal behaviour via <strong>Land Surface Temperature</strong> &amp; <strong>Apparent Thermal Inertia</strong>, then integrated NDVI, NDBI &amp; LST into a spatial <strong>Urban Thermal Vulnerability Index (UTVI)</strong> to delineate thermal-risk zones.</li>
+              <li>Processed <strong>8 years</strong> of multi-temporal imagery in Google Earth Engine — spectral indicators (<strong>NDVI, NDBI, NDWI</strong>) with <span class="ml-hl">supervised classification &amp; post-classification change detection</span> to map land-use transitions &amp; urban expansion.</li>
+              <li>Built a composite <strong>Urban Thermal Vulnerability Index (UTVI)</strong> from land-surface temperature, land cover &amp; spectral indicators — zone-level heat-risk maps tied to impervious-surface growth for targeted cooling &amp; green-infrastructure investment.</li>
+              <li>Delivered a replicable, scalable workflow linking satellite-derived urban change to thermal-risk outcomes — a methodology template deployable to any Indian metro.</li>
             </ul>
-            <div class="stack-list">
-              <span>Google Earth Engine</span><span>Sentinel-2</span><span>ALOS PALSAR</span><span>Remote Sensing</span>
+            <div class="project-bottom">
+              <div class="stack-list">
+                <span>Google Earth Engine</span><span>Sentinel-2</span><span>ALOS PALSAR</span><span>Remote Sensing</span>
+              </div>
             </div>
           </article>
 
@@ -375,14 +383,15 @@
             <h3 class="project-title">Surface Water–Groundwater Interaction under Climatic &amp; Anthropogenic Forcing — Chambal River Basin</h3>
             <p class="project-desc">A multi-source geospatial–geostatistical model of river–aquifer exchange and recharge prioritisation, in collaboration with Liverpool John Moores University, UK.</p>
             <ul class="project-points">
-              <li>Fused a multi-resolution raster stack — SRTM 30 m DEM, Copernicus/ESRI Sentinel-2 land cover, ERA5, SoilGrids &amp; GLHYMPS — to a common 1 km grid (UTM 44N); derived drainage products in <strong>Arc Hydro</strong>.</li>
+              <li>Fused a multi-resolution raster stack — SRTM 30 m DEM, Copernicus CCI &amp; ESRI Sentinel-2 land cover, ERA5, SoilGrids &amp; GLHYMPS — to a 1 km grid (UTM 44N); derived <strong>Arc Hydro</strong> drainage products as infiltration controls.</li>
               <li>Ran <strong>post-classification change detection</strong> on a 25-year land-cover series, quantifying <strong>353.7% built-up expansion</strong> via transition matrices.</li>
-              <li>Modelled river–aquifer exchange via raster algebra — water-balance recharge, Baseflow Index &amp; <strong>Darcy flux (q = −T∇h)</strong> over potentiometric surfaces from <span class="ml-hl">Empirical Bayesian Kriging</span> of CGWB wells.</li>
-              <li><span class="ml-hl">Mapped per-pixel trends &amp; anomalies with Mann–Kendall &amp; Sen's slope</span> across 25 annual layers, separating climatic from anthropogenic forcing (mean BFI 0.30 → 0.60).</li>
-              <li>Built an <span class="ml-hl">AHP-MCDA weighted-overlay suitability model</span> (11 layers, CR &lt; 0.10) to prioritise groundwater-recharge zones.</li>
+              <li>Modelled river–aquifer exchange via raster algebra — water-balance recharge, Baseflow Index &amp; <strong>Darcy flux (q = −T∇h)</strong> — over potentiometric surfaces from <span class="ml-hl">Empirical Bayesian Kriging</span> of CGWB wells.</li>
+              <li><span class="ml-hl">Mapped trends with Mann–Kendall &amp; Sen's slope</span> across 25 layers (mean BFI 0.30 → 0.60) and built an <span class="ml-hl">AHP-MCDA suitability model</span> (11 layers, CR &lt; 0.10) to prioritise recharge zones.</li>
             </ul>
-            <div class="stack-list">
-              <span>Arc Hydro</span><span>ERA5</span><span>EBK Geostatistics</span><span>Python</span>
+            <div class="project-bottom">
+              <div class="stack-list">
+                <span>ArcGIS Pro</span><span>Arc Hydro</span><span>Python</span><span>ERA5</span><span>SoilGrids</span>
+              </div>
             </div>
           </article>
 
@@ -635,6 +644,6 @@
     </button>
   </div>
 
-  <script src="script.js?v=5" defer></script>
+  <script src="script.js?v=6" defer></script>
 </body>
 </html>

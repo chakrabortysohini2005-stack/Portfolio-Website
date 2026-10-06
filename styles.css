@@ -390,10 +390,20 @@ main section[id] { scroll-margin-top: 84px; }
 .stack-list span { font-size: 0.76rem; font-family: var(--font-display); color: var(--ink); padding: 4px 11px; border-radius: 7px; background: rgba(255,255,255,0.04); border: 1px solid var(--line); }
 
 .project-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; margin-top: 4px; }
+.project-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .status-badge { font-size: 0.8rem; font-weight: 600; color: var(--accent); white-space: nowrap; }
+
+/* Live-project link */
+.project-link { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-display); font-weight: 600; font-size: 0.85rem; color: var(--accent); align-self: flex-start; transition: gap .2s var(--ease), color .2s var(--ease); }
+.project-link:hover { color: #67e8d6; gap: 10px; }
+.project-link .arrow { transition: transform .2s var(--ease); }
+.project-link:hover .arrow { transform: translate(2px, -2px); }
 
 .project-card { display: flex; flex-direction: column; }
 .project-card .stack-list { margin-top: auto; padding-top: 4px; }
+/* bottom block (stack + optional link) pinned to the card foot */
+.project-bottom { margin-top: auto; display: flex; flex-direction: column; gap: 13px; padding-top: 6px; }
+.project-bottom .stack-list { margin-top: 0; padding-top: 0; }
 
 /* ============================================================
    INTERNSHIP
