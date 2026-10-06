@@ -235,6 +235,16 @@ main section[id] { scroll-margin-top: 84px; }
   background: linear-gradient(100deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
+
+/* Hero multi-role headline */
+.hero-roles {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem); line-height: 1.18;
+}
+.hero-roles .role { color: var(--ink); white-space: nowrap; }
+.hero-roles .role-sep { color: var(--accent); margin: 0 0.32em; font-weight: 400; }
+/* centre the roles when the hero stacks on smaller screens */
+@media (max-width: 960px) { .hero-roles { justify-content: center; } }
 .hero-sub { font-size: clamp(1rem, 1.6vw, 1.18rem); color: var(--muted); max-width: 46ch; margin-bottom: 30px; }
 .hero-sub strong { color: var(--ink); font-weight: 600; }
 
